@@ -1,0 +1,22 @@
+Room 2: Coding
+Please write a code following these tasks and submit them separately with the name of your team and topic (Example: team3_ml.py) in the Google Classroom.
+
+For Python: Write a function that takes a list of integers and returns a new list containing only the prime numbers.
+
+Example: -
+
+
+For JavaScript: Write a function that checks whether a given string is a palindrome.
+
+Example: -
+
+
+For Machine Learning: Write a function that calculates the cosine similarity between two NumPy vectors.
+
+Example: -
+
+
+For Cybersecurity: Write a script secure_file.sh that creates a file and sets secure permissions. The script should take a filename as input, create the file (if it doesn’t exist), set permissions so only the owner can read and write, print the final permissions using ls -l
+
+Example: -
+
