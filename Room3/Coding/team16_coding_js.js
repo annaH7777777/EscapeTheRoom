@@ -13,4 +13,16 @@ function flattenObject(obj, parentKey = '', result = {}) {
   return result;
 }
 
+//Example Usage
+const nested = {
+  user: {
+    name: "Alice",
+    address: {
+      city: "Paris",
+      zip: "75000"
+    }
+  },
+  active: true
+};
 
+console.log(flattenObject(nested));
