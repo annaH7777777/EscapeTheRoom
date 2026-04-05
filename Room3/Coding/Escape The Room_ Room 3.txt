@@ -2,7 +2,10 @@
 Please write a code following these tasks and submit them separately with the name of your team and topic (Example: team3_ml.py) in the Google Classroom.
 
 
-For Python: Create a Simple LRU (Least Recently Used) Cache. Build a class called LRUCache that simulates a basic "Least Recently Used" caching system. The cache has a fixed maximum size. When the cache is full and a new item is added, the least recently used item should be removed. Implement get(key) and put(key, value) methods.
+For Python: Create a Simple LRU (Least Recently Used) Cache.
+Build a class called LRUCache that simulates a basic "Least Recently Used" caching system.
+The cache has a fixed maximum size. When the cache is full and a new item is added,
+the least recently used item should be removed. Implement get(key) and put(key, value) methods.
 
 
 Note: You can use OrderedDict or manage a custom doubly-linked list.
@@ -17,9 +20,10 @@ Example:
 
 
 
-For Machine Learning: Using scikit-learn, create a complete machine learning pipeline that: loads the Iris dataset; applies StandardScaler for feature scaling; trains a Logistic Regression model; uses GridSearchCV to find the best value for the C parameter (regularization strength); prints the best hyperparameters and the model's accuracy on a test set.
-
-
+For Machine Learning: Using scikit-learn, create a complete machine learning pipeline that:
+loads the Iris dataset; applies StandardScaler for feature scaling;
+trains a Logistic Regression model; uses GridSearchCV to find the best value for the C parameter (regularization strength);
+prints the best hyperparameters and the model's accuracy on a test set.
 Note: GridSearchCV helps find the best model parameters automatically.
 
 
