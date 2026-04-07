@@ -1,0 +1,32 @@
+﻿Room 4: Coding
+Please write a code following these tasks and submit them separately with the name of your team and topic (Example: team3_ml.py) in the Google Classroom.
+
+
+For Python: Write a function that merges two sorted lists into a single sorted list without duplicates.
+
+
+Example: -
+
+
+
+
+For Machine Learning: Write a function that calculates the Euclidean distance between two NumPy vectors.
+
+
+Example: -
+
+
+
+
+For JavaScript: Write a function that flattens a nested array (only one level - no deeply nested flattening).
+
+
+Example: -
+
+
+
+
+For Cybersecurity: Write a script check_process.sh that checks if a process is running. The script should take a process name as input, print RUNNING if the process exists, print NOT RUNNING otherwise.
+
+
+Example: -
