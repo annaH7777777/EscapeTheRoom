@@ -1,3 +1,4 @@
+#Write a function that merges two sorted lists into a single sorted list without duplicates.
 def merge_sorted(a, b):
     return sorted(set(a) | set(b))
     
