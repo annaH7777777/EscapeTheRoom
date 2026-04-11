@@ -1,0 +1,1 @@
+For JavaScript: Write a function that creates a Promise which resolves after a given delay (in ms).#
