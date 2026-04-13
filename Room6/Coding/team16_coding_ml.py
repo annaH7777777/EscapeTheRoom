@@ -5,20 +5,31 @@ from sklearn.model_selection import train_test_split
 
 
 def split_and_balance(X, y, test_size=0.2, random_state=42):
+    # Step 1: split into train/test (80/20 by default)
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=test_size, random_state=random_state
     )
+    # Step 2: find all unique classes and how many samples each has
+    # e.g. classes=[0,1,2], counts=[120,24,16]
     classes, counts = np.unique(y_train, return_counts=True)
+    # Step 3: find the smallest class — we'll downsample all others to this size
+    # e.g. min_count=16 (class 2 has fewest)
     min_count = counts.min()
     balanced_indices = []
     rng = np.random.RandomState(random_state)
+    # Step 4: for each class, randomly pick min_count samples
     for cls in classes:
+        # get positions in y_train where class == cls
         cls_indices = np.where(y_train == cls)[0]
+        # randomly sample min_count indices (no duplicates)
         sampled = rng.choice(cls_indices, size=min_count, replace=False)
         balanced_indices.extend(sampled)
+    # Step 5: shuffle so classes aren't in order
     rng.shuffle(balanced_indices)
+    # Step 6: use the balanced indices to get the final training data
     X_train_balanced = X_train[balanced_indices]
     y_train_balanced = y_train[balanced_indices]
+    # test set stays unchanged — we only balance training
     return X_train_balanced, X_test, y_train_balanced, y_test
 
 
